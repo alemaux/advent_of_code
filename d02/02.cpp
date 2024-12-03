@@ -1,7 +1,7 @@
 #include<iostream>
 #include<fstream>
 #include<sstream>
-#include<vector>
+#include<vector>bg
 #include<string>
 
 using namespace std;
@@ -11,7 +11,7 @@ bool is_safe(vector<int> vec){
 	for(int i = 0; i<vec.size()-1; i++){
 		if(decreasing&&((vec[i] - vec[i+1])<1||(vec[i] - vec[i+1])>3)){
 			safe = false;
-		}else if(!decreasing&&((vec[i+1]-vec[i])>3||(vec[i+1]-vec[i])<1)){
+		}else if(!decreasi	ng&&((vec[i+1]-vec[i])>3||(vec[i+1]-vec[i])<1)){
 			safe = false;
 		}
 	}
