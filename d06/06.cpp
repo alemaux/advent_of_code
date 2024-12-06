@@ -76,9 +76,9 @@ int main(int argc, char* argv[]){
 
     ofstream fileout("./output.txt", ios::binary);
     for(int i = 0; i<map.size(); i++){
-        if (i%width == 0){
+        if (i%width == width-1){
             fileout<< map[i]<<endl;
-        }else fileout<<map[i]<<" ";
+        }else fileout<<map[i];
     }
 
     int sum = 0;
